@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Update Student Info:</h1>
+<form method="POST" class="post-form" >
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" class="btn btn-primary" value = "Update">
+    <a href='/student' class="btn btn-light">Cancel</a>
+</form>
+</body>
+</html>

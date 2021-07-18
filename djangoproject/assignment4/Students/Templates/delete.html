@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+<h1>Delete Student</h1>
+<form method="post" class="post-form" >
+    {% csrf_token %}
+    <fieldset disabled>
+        Student ID: {{object.id}} <br>
+        First Name: {{object.firstName}} <br>
+        Last Name: {{object.lastName}} <br>
+        Registration Date: {{object.registrationDate}} <br>
+         <br>
+        <br>
+        Click YES to confirm
+    </fieldset>
+    <input type = "submit" class="btn btn-danger" value="YES">
+    <a href='/student' class="btn btn-light">Cancel</a>
+</form>
+</body>
+</html>
